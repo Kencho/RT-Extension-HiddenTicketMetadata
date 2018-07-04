@@ -1,0 +1,21 @@
+use strict;
+use warnings;
+
+use inc::Module::Install;
+
+author 'Jesús Alonso Abad and others';
+license 'MIT';
+
+RTx 'RT-Extension-HiddenTicketMetadata';
+
+requires_rt '4.4.0';
+
+requires 'JSON';
+requires 'Try::Tiny';
+
+test_requires 'Test::More';
+test_requires 'Devel::Cover';
+
+WriteAll();
+
+1;
